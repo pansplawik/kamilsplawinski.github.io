@@ -5,6 +5,9 @@ import { NavbarPage } from './components/navbar';
 import { Educaiton } from './screens/education';
 import { Experience } from './screens/experience';
 import { Technologies } from './screens/tech/technologies';
+import { ProjectsDataScience } from './screens/projectsData';
+import { ProjectsSoftware } from './screens/projectsSoft';
+import { SocialMedia } from './screens/social/social';
 
 function App() {
 
@@ -16,6 +19,9 @@ function App() {
       <Educaiton/>
       <Experience/>
       <Technologies/>
+      <ProjectsDataScience/>
+      <ProjectsSoftware/>
+      <SocialMedia/>
       <div></div>
       </header>
     </div>

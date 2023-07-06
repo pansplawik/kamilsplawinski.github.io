@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export function NavbarPage() {
   return (
@@ -14,7 +15,10 @@ export function NavbarPage() {
             <Nav.Link href="education" style={{ fontFamily: 'monospace',color:'white' }}>Education</Nav.Link>
             <Nav.Link href="experience" style={{ fontFamily: 'monospace' ,color:'white'}}>Experience</Nav.Link>
             <Nav.Link href="technologies" style={{ fontFamily: 'monospace' ,color:'white'}}>Technologies</Nav.Link>
-            <Nav.Link href="projects" style={{ fontFamily: 'monospace' ,color:'white'}}>Projects</Nav.Link>
+            <NavDropdown title="Projets" style={{color:'white'}}>
+              <NavDropdown.Item href="#action/3.1">Software</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Data Science</NavDropdown.Item>           
+            </NavDropdown>
             <Nav.Link href="social" style={{ fontFamily: 'monospace',color:'white' }}>Social</Nav.Link>
           </Nav>
         </Navbar.Collapse>
