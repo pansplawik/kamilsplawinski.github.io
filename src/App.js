@@ -8,6 +8,8 @@ import { Technologies } from './screens/tech/technologies';
 import { ProjectsDataScience } from './screens/projectsData';
 import { ProjectsSoftware } from './screens/projectsSoft';
 import { SocialMedia } from './screens/social/social';
+import Footer from './components/footer';
+import { Forms } from './screens/forms';
 
 function App() {
 
@@ -22,8 +24,9 @@ function App() {
       <ProjectsDataScience/>
       <ProjectsSoftware/>
       <SocialMedia/>
-      <div></div>
+      <Forms/>
       </header>
+      <Footer/>
     </div>
   );
 }
