@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavbarPage } from './components/navbar';
 import { Educaiton } from './screens/education';
 import { Experience } from './screens/experience';
+import { Technologies } from './screens/tech/technologies';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <div class="title">CV - Kamil Spławiński</div>
       <Educaiton/>
       <Experience/>
+      <Technologies/>
       <div></div>
       </header>
     </div>

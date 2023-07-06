@@ -13,6 +13,7 @@ export function NavbarPage() {
             <Nav.Link href="home" style={{ fontFamily: 'monospace' ,color:'white'}}>Home</Nav.Link>
             <Nav.Link href="education" style={{ fontFamily: 'monospace',color:'white' }}>Education</Nav.Link>
             <Nav.Link href="experience" style={{ fontFamily: 'monospace' ,color:'white'}}>Experience</Nav.Link>
+            <Nav.Link href="technologies" style={{ fontFamily: 'monospace' ,color:'white'}}>Technologies</Nav.Link>
             <Nav.Link href="projects" style={{ fontFamily: 'monospace' ,color:'white'}}>Projects</Nav.Link>
             <Nav.Link href="social" style={{ fontFamily: 'monospace',color:'white' }}>Social</Nav.Link>
           </Nav>
