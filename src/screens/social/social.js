@@ -4,7 +4,7 @@ export const SocialMedia=()=> {
   return (
     <>
     <div class="subTitle">Social Media</div>
-    <Card bg='dark' style={{width: '80vw',marginBottom:'5vw'}}>
+    <Card bg='light' style={{width: '80vw',marginBottom:'5vw'}}>
       <Card.Body>
       <a href="https://www.linkedin.com/in/kamil-spławiński-ab29731b7" target="_blank" rel="noopener noreferrer">
   <img className="iconTechnologies" src={require('./icons/linkedin.png')} alt="linkedin" />

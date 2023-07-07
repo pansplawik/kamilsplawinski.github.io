@@ -4,7 +4,7 @@ export const Technologies=()=> {
   return (
     <>
     <div class="subTitle">Technologies</div>
-    <Card bg='dark' style={{width: '80vw',marginBottom:'5vw'}}>
+    <Card bg='light' style={{width: '80vw',marginBottom:'5vw'}}>
       <Card.Body>
       <img class='iconTechnologies' src={require('./icons/reactNative.png')} alt="React Native" />
       <img class='iconTechnologies' src={require('./icons/cSharp.png')} alt="C#" />

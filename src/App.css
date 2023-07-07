@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #001C30;
+  background-color: #F2EAD3;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -75,4 +75,9 @@
 .iconTechnologies{
   height:64px;
   margin:10px
+}
+
+.dropdownNavbar{
+  font-family: 'monospace';
+  color:'white' 
 }

@@ -1,23 +1,21 @@
-import Card from 'react-bootstrap/Card';
+import Accordion from 'react-bootstrap/Accordion';
 
 export function CardScreen(props) {
   const { description } = props;
   const descriptionArray = Array.isArray(description) ? description : [description];
 
-
   return (
-    <Card bg='dark' style={{width: '80vw',marginBottom:'5vw'}}>
-      <Card.Body>
-      {descriptionArray.map((descript) => (
-        <Card.Body style={{ marginBottom: '10px', border: '1px solid white' }}>
-           <Card.Text style={{ fontFamily: 'monospace' ,color:'white' ,textAlign:'left',fontSize:19}}>
-        {descript.split('\n').map((line, index) => (
-            <p key={index}>{line}</p>
-          ))}
-        </Card.Text>
-        </Card.Body>    
-      ))}   
-      </Card.Body>
-    </Card>
+    <Accordion style={{ width: '80vw', marginBottom: '5vw'}}>
+      {descriptionArray.map((descript, index) => (
+        <Accordion.Item eventKey={index.toString()} >
+          <Accordion.Header style={{ fontFamily: 'monospace',fontSize:25 }}>{descript[0]}</Accordion.Header>
+          <Accordion.Body style={{ fontFamily: 'monospace',fontSize:18,marginTop:10,textAlign:'left' }}>
+          {descript[1].split('\n').map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+            </Accordion.Body>
+        </Accordion.Item>
+      ))}
+    </Accordion>
   );
 }
