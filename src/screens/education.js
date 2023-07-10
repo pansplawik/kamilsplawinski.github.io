@@ -10,9 +10,7 @@ export const Educaiton = () => {
 	return (
 		<>
 			<div id="education">
-				<div class="subTitle" >
-					Education
-				</div>
+				<div class="subTitle">Education</div>
 				<CardScreen description={description} />
 			</div>
 		</>
